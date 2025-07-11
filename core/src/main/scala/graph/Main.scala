@@ -19,7 +19,7 @@ object Main extends App {
     case Right(graph) =>
       println(s"Decoded graph: $graph")
       println("Graph in DOT format:")
-      println(graph.toDot) // ✅ fonctionne maintenant
+      println(graph.toDot)
     case Left(error) =>
       println(s"Failed to decode graph: $error")
   }
